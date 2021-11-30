@@ -46,15 +46,12 @@ val talk = DeckBuilder(1920, 1080)
   """.stripMargin)
   .iframeSlide("https://docs.scala-lang.org/")
   .markdownSlide("""
-  |# Open source documentation
-  
-  |Open source documentation is a form of educational material (content, tutorials, etc).
-  |It is not university content (it is free content) but it is:
+  |# Open source documentation...
 
-  |* Is constantly available
-  |* Is designed for returning readers as well as new readers
-  |* Is not tied to an LMS or enrolment
-  |* Has a central point for contributing changes
+  |* is constantly available
+  |* is designed for returning readers as well as new readers
+  |* is not tied to an LMS or enrolment
+  |* has a central point for contributing changes
 
   |It is typically [developed in a code-like manner](https://https://github.com/scala/docs.scala-lang).  
   """.stripMargin)
