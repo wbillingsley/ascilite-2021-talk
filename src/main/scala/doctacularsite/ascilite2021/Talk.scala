@@ -53,7 +53,7 @@ val talk = DeckBuilder(1920, 1080)
   |* is not tied to an LMS or enrolment
   |* has a central point for contributing changes
 
-  |It is typically [developed in a code-like manner](https://https://github.com/scala/docs.scala-lang).  
+  |It is typically [developed in a code-like manner](https://github.com/scala/docs.scala-lang).  
   """.stripMargin)
   .markdownSlide(s"""
   |# The Jamstack
