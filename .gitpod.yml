@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: |
+      npm install
+      ./fullBuild.sh
+    command: |
+      npx http-server -p 8080
