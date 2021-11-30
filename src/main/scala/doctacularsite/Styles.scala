@@ -12,8 +12,8 @@ object Styles {
   val imageCard = Styling(
     "padding: 20px; border-radius: 20px; background: #f6f6f6; display: inline-block;"
   ).modifiedBy(
-    " img" -> "display: inline-block; margin-right: 20px; vertical-align: middle;",
-    " p" -> "display: inline-block; font-family: 'Tangerine', cursive; font-size: 26pt; vertical-align: middle; margin-right: 20px;"
+    " img" -> "display: inline-block; margin-right: 20px; vertical-align: middle; width: 600px;",
+    " p" -> "display: inline-block; font-family: 'Tangerine', cursive; font-size: 72pt; vertical-align: middle; margin-right: 20px;"
   ).register()
 
   val imageSlide = Styling(
@@ -24,7 +24,9 @@ object Styles {
       |margin: -50px;
       |""".stripMargin
   ).modifiedBy(
-    ".cover" -> "object-fit: cover;",
+    ".cover img" -> "object-fit: cover; height: 100%;",
+    " img" -> "width: 100%;",
+    ".pp img" -> "width: 50%;",
     " figcaption" ->
       """font-size: 3rem;
         |position: absolute;
