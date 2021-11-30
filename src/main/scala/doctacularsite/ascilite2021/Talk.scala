@@ -227,7 +227,7 @@ val talk = DeckBuilder(1920, 1080)
 
   |* [*This talk!*](https://wbillingsley.com/ascilite-2021-talk)
   |  - Of course...
-  """)
+  """.stripMargin)
   .markdownSlide("""
   |# Getting started...
 
@@ -238,7 +238,11 @@ val talk = DeckBuilder(1920, 1080)
   |3. Push it to your own GitHub repository
   |
   |GitHub Pages will automatically build the site for you.
-  """)
+  |
+  |And these days, rather than "install a development environment", you can get the cloud to do that for you too.
+  |
+  |E.g. this paragraph was added in "Gitpod" (by putting "gitpod.io/#" in front of the GitHub URL for the repository)
+  """.stripMargin)
   .markdownSlide("<img src='resources/ascilite2021/site-fixed-msg.png' width='1600' alt='A student fixed my bug' />").withClass("center")
   .willCcBy
   .renderSlides
