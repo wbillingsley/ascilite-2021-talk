@@ -62,6 +62,10 @@ extension (db:DeckBuilder) {
 
   }
 
+  def iframeSlide(url:String) = db.veautifulSlide(
+    <("iframe")(^.attr("width") := "100%", ^.attr("height") := "100%", ^.src := url)
+  )
+
   def sectionTitle(title:String, subtitle:String = ""):DeckBuilder = {
     db.veautifulSlide(<.div(
       <.h2(title),
