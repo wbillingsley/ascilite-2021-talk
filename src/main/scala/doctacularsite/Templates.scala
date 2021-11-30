@@ -26,12 +26,12 @@ extension (db:DeckBuilder) {
    * A slide with a single image and a caption
    */
   def landscapeImageSlide(image:String, caption:String, cover:Boolean = true):DeckBuilder = {
-    db.veautifulSlide(
-      <.div(^.cls := "wrapper",
+    db.veautifulSlide(<.div(
+      <.div(^.cls := (if (cover) s"${imageSlide.className} cover" else s"${imageSlide.className} contain"),
         <.img(^.src := image),
         <("figcaption")(caption)
       )
-    ).withClass(if (cover) "image-slide cover" else "image-slide contain")
+    ))
   }
 
   /**

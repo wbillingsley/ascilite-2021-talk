@@ -25,7 +25,10 @@ val site = Site()
   site.toc = site.Toc(
     "Home" -> site.HomeRoute,
 
-    "ASCILITE 2021" -> site.addDeck("ascilite2021", ascilite2021.deck)
+    "ASCILITE 2021" -> site.Toc(
+      "Talk" -> site.addDeck("ascilite2021", ascilite2021.talk),
+      "An example deck" -> site.addDeck("example-deck", ascilite2021.simpleDeck),
+    )
   )
   site.home = () => site.renderDeck("ascilite2021", 0)
   Styles.installStyles()
